@@ -16,8 +16,8 @@ Package Structure:
         fix.py - Fix prompts
 
 Example:
-    from src.gen_fix_cycle.cycle import CycleConfig, run_generation
-    from src.gen_fix_cycle.models import Difficulty
+    from gen_fix_cycle.cycle import CycleConfig, run_generation
+    from gen_fix_cycle.models import Difficulty
 
     config = CycleConfig(
         course="APHUMG",
