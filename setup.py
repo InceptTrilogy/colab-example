@@ -17,7 +17,8 @@ setup(
         "pytest-cov",
         "black",
         "isort",
-        "pyright"
+        "pyright",
+        "anthropic"
     ],
     extras_require={
         "dev": [
