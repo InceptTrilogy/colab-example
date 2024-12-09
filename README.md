@@ -34,25 +34,8 @@ src/
 
 1. Open this link in your browser: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/InceptTrilogy/colab-example/blob/master/src/notebooks/gen_fix_cycle.ipynb)
 
-2. Run these setup cells at the start of your notebook:
-
-```python
-# Clone repo
-!git clone https://github.com/InceptTrilogy/colab-example.git
-%cd colab-example
-
-# Install package
-!pip install -e .
-
-# Add src to Python path
-import sys
-sys.path.append('/content/colab-example/src')
-
-# Install OpenAI for LLM integration
-!pip install openai
-```
-
-3. Important Notes:
+2. Important Notes:
+- Read the instructions at the top of the notebook.
 - Use absolute imports in notebook cells (e.g., `from gen_fix_cycle.models import Question`)
 - Keep working directory as repo root
 - If import errors occur, verify sys.path includes '/content/colab-example/src'
