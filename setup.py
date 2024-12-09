@@ -1,15 +1,32 @@
+"""Setup file for the gen_fix_cycle package."""
+
 from setuptools import setup, find_packages
 
 setup(
-    name="colab_example",
+    name="gen_fix_cycle",
     version="0.1.0",
-    packages=find_packages(),
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    python_requires=">=3.11",
     install_requires=[
-        "google-auth>=2.0.0",
-        "google-auth-oauthlib>=0.4.0",
-        "google-auth-httplib2>=0.1.0",
-        "google-api-python-client>=2.0.0",
-        "pydantic>=2.0.0",
+        "jupyter>=1.0.0",
+        "notebook>=7.0.6",
+        "ipykernel>=6.27.1",
+        "mypy>=1.7.1",
+        "pytest>=7.4.3",
+        "pytest-cov>=4.1.0",
+        "black>=23.11.0",
+        "isort>=5.12.0",
+        "pyright>=1.1.339"
     ],
-    python_requires=">=3.9",
+    extras_require={
+        "dev": [
+            "black",
+            "isort",
+            "mypy",
+            "pyright",
+            "pytest",
+            "pytest-cov"
+        ]
+    }
 )

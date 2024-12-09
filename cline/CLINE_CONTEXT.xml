@@ -53,20 +53,21 @@
         </note>
     </long-term-memory>
 
-  <current-task>
-    This project is part of a demonstration of how to work on 
-    Google colab (python) notebooks in a collaborative environment
-    with version control and using best coding practices.  
+    <current-task>
+    The rewritten gen_fix_cycle.ipynb and its associated package implementation successfully preserve the core functionality of the original GenFixCycle.ipynb while making significant improvements to code organization and maintainability. The key components - question generation, quality checking, and fix cycles - are all properly implemented with improved structure.
 
-    Most of the coding is going to be done in google colab.  
-    But I'd like to demonstrate usage of _utility functions_ which
-    can be defined in python libraries in the codebase.  
+However, there are several critical pieces that need to be completed:
 
-    To that end, write a google sheets client with some basic utility
-    functions you'd expect for connecting to a google sheet. 
+LLM Integration: The actual integration with the language model needs to be implemented to replace the placeholder comments in cycle.py.
 
-    The project just got started (I did git init already but there's no 
-    .gitignore yet).  Add everything needed to comply with my standards. 
-    All I want are the utility functions, and to push them to `master`.  
-  </current-task>
+Configuration: Course-specific constants like lesson plan variables and filepaths need to be moved from the original notebook to config.py.
+
+Testing Infrastructure: The browser interaction functionality for testing generated questions needs to be implemented.
+
+Examples: The multishot examples need to be integrated into the criteria or prompts modules.
+
+Response Schemas: The JSON response schemas from the original need to be moved to the models module.
+
+The rewrite provides a more maintainable and extensible foundation, but these missing pieces should be implemented to achieve full feature parity with the original notebook.
+    </current-task>
 </cline-context>
