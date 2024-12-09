@@ -48,15 +48,14 @@ src/
 import sys
 sys.path.append('/content/colab-example/src')
 
-# Optional: Install additional dependencies
-!pip install openai puppeteer-python  # Add others as needed
+# Install OpenAI for LLM integration
+!pip install openai
 ```
 
 3. Important Notes:
 - Use absolute imports in notebook cells (e.g., `from gen_fix_cycle.models import Question`)
 - Keep working directory as repo root
 - If import errors occur, verify sys.path includes '/content/colab-example/src'
-- Browser testing features may have limited functionality in Colab
 
 ## Development
 
@@ -75,3 +74,7 @@ pip install -e .
 ```bash
 pytest
 ```
+
+## License
+
+[Add your license information here]
