@@ -1,0 +1,63 @@
+# Instructions for setting up colab-example repository
+
+1. First, create this minimal README.md:
+```markdown
+# colab-example
+
+Collaborative Python notebook examples. Open `notebooks/analysis.ipynb` in Google Colab.
+```
+
+2. Create this directory structure:
+```
+colab-example/
+├── src/
+│   └── utils.py
+├── notebooks/
+│   └── analysis.ipynb
+└── README.md
+```
+
+3. In src/utils.py, add a simple test function:
+```python
+def greet(name):
+    return f"Hello, {name}! This import worked."
+```
+
+4. Create notebooks/analysis.ipynb with this as the first cell:
+```python
+"""Setup: Run this cell first"""
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Clone repo if needed
+!git clone https://github.com/InceptTrilogy/colab-example.git
+%cd colab-example
+
+# Add to path for imports
+import sys
+if '/content/colab-example' not in sys.path:
+    sys.path.append('/content/colab-example')
+
+# Test import
+from src.utils import greet
+print(greet("Collaborator"))
+```
+
+5. Add second cell with markdown:
+```markdown
+## Analysis Notebook
+Your analysis starts here. All shared functions should go in src/utils.py
+```
+
+6. Create .gitignore:
+```
+.ipynb_checkpoints
+__pycache__/
+*.pyc
+```
+
+This setup provides:
+- Minimal but clear README
+- Working imports from src/
+- Self-contained setup in first notebook cell
+- Basic structure for collaboration
