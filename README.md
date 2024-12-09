@@ -32,13 +32,13 @@ src/
 
 ## Running in Google Colab
 
-1. Open this link in your browser: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/[your-repo]/colab-example/blob/master/src/notebooks/gen_fix_cycle.ipynb)
+1. Open this link in your browser: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/InceptTrilogy/colab-example/blob/master/src/notebooks/gen_fix_cycle.ipynb)
 
 2. Run these setup cells at the start of your notebook:
 
 ```python
 # Clone repo
-!git clone https://github.com/[your-repo]/colab-example.git
+!git clone https://github.com/InceptTrilogy/colab-example.git
 %cd colab-example
 
 # Install package
@@ -62,7 +62,7 @@ sys.path.append('/content/colab-example/src')
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-repo]/colab-example.git
+git clone https://github.com/InceptTrilogy/colab-example.git
 cd colab-example
 ```
 
@@ -75,7 +75,3 @@ pip install -e .
 ```bash
 pytest
 ```
-
-## License
-
-[Add your license information here]
